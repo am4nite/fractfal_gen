@@ -13,6 +13,9 @@ gcc -shared -fPIC -o f.so f.c -lm
 *fractal.py* plots grid using matplotlib based on the values computed using the *c_module.py* **iterate_point(X, Y, CX, CY, N)** function
 
 ### **iterate_point(X, Y, CX, CY, N)** function
-- *X* points x coordinate (real part)
-- *Y* points y coordinate (imaginary part)\\
-$C = C_X + i \cdot C_Y$
+- *X* points x coordinate (real part)  
+- *Y* points y coordinate (imaginary part)  
+$C = C_X + i \cdot C_Y$  
+- *CX* is the real part of additive constant $C$, $C_X$
+- *CY* is the imaginary part of additive constant $C$, $C_Y$
+- *N* us the number of iterations
