@@ -11,10 +11,11 @@ rec_size = x_grid / N
 iter = 10
 limit = 40000
 
-for i, cx in enumerate(np.arange(-0.8, 0.8, 0.2)):
+for i, Q in enumerate(np.arange(-2, 2, 0.05)):
     fig, axis = plt.subplots()
 
-    cy = 0.1
+    cx = 0.314
+    cy = Q
 
     for x in np.arange(-x_grid, x_grid, rec_size):
         for y in np.arange(-y_grid, y_grid, rec_size):
@@ -34,8 +35,12 @@ for i, cx in enumerate(np.arange(-0.8, 0.8, 0.2)):
     axis.set_xlim(-x_grid, x_grid)
     axis.set_ylim(-y_grid, y_grid)
     axis.set_aspect("equal", adjustable="box")
-    axis.set_xlabel("x")
-    axis.set_ylabel("y")
+    axis.set_axis_off()
 
-    plt.savefig(f"fractal_{i}.png", dpi=150)
+    plt.savefig(
+        f"fractal_{i}.png",
+        dpi=150,
+        bbox_inches="tight",
+        pad_inches=0
+    )
     plt.close(fig)
