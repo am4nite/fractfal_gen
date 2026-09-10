@@ -1,5 +1,8 @@
 # fractfal_gen
 
+![Fractal animation](big_loop/fractal_linear_cy.gif)
+
+
 **f.c** code is packaged as a lib into **f.so** with
 
 ```bash
