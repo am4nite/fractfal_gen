@@ -1,4 +1,4 @@
-import ctypes
+import ctypes#knihovna na import C funkci z .so souboru
 
 module = ctypes.CDLL('./f.so')
 
