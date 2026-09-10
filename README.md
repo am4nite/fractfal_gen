@@ -15,4 +15,4 @@ gcc -shared -fPIC -o f.so f.c -lm
 ### **iterate_point(X, Y, CX, CY, N)** function
 - *X* points x coordinate (real part)
 - *Y* points y coordinate (imaginary part)
-$C = CX + i CY$
+$C = C_X + i \cdot C_Y$
