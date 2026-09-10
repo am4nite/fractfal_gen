@@ -1,0 +1,3 @@
+venv/
+big_loop/__pycache__/
+big_loop/fractal_*.png
